@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Korean News Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="Logo.png" alt="Korean News Studio" class="mark" />
+        <div class="brand-title">
+          <b>Korean News Studio</b>
+          <span>읽기 연습용 쉬운 뉴스</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="다크모드 토글" title="다크모드 전환">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <div class="pill">오늘의 기사 · 3</div>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <aside class="sidebar">
+      <div class="side-title">검색</div>
+      <input class="search" placeholder="키워드로 기사 찾기 (예: 탄소, SNS, 외교)" />
+
+      <div class="section">
+        <div class="side-title">난이도 필터</div>
+        <div class="chip-row" role="group" aria-label="levels">
+          <div class="chip" aria-pressed="true">Level 1</div>
+          <div class="chip" aria-pressed="false">Level 2</div>
+          <div class="chip" aria-pressed="false">Level 3</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="side-title">부처별</div>
+        <select class="filter-select" id="department-filter" aria-label="부처 선택">
+          <option value="">전체</option>
+          <option value="청와대">청와대</option>
+          <option value="고용노동부">고용노동부</option>
+          <option value="과학기술정보통신부">과학기술정보통신부</option>
+          <option value="교육부">교육부</option>
+          <option value="국가데이터처">국가데이터처</option>
+          <option value="국가보훈부">국가보훈부</option>
+          <option value="국무조정실">국무조정실</option>
+          <option value="국방부">국방부</option>
+          <option value="국토교통부">국토교통부</option>
+          <option value="재정경제부">재정경제부</option>
+          <option value="기후에너지환경부">기후에너지환경부</option>
+          <option value="농림축산식품부">농림축산식품부</option>
+          <option value="문화체육관광부">문화체육관광부</option>
+          <option value="법무부">법무부</option>
+          <option value="법제처">법제처</option>
+          <option value="보건복지부">보건복지부</option>
+          <option value="산업통상부">산업통상부</option>
+          <option value="성평등가족부">성평등가족부</option>
+          <option value="식품의약품안전처">식품의약품안전처</option>
+          <option value="외교부">외교부</option>
+          <option value="인사혁신처">인사혁신처</option>
+          <option value="중소벤처기업부">중소벤처기업부</option>
+          <option value="지식재산처">지식재산처</option>
+          <option value="통일부">통일부</option>
+          <option value="해양수산부">해양수산부</option>
+          <option value="행정안전부">행정안전부</option>
+          <option value="기획예산처">기획예산처</option>
+        </select>
+      </div>
+    </aside>
+
+    <section>
+      <div class="header">
+        <div class="header-text">
+          <h1>오늘의 쉬운 뉴스</h1>
+          <div class="header-desc">
+            <span class="desc-line">레벨·주제별로 골라 읽고,</span>
+            <span class="desc-line">모르는 단어를 줄이며</span>
+            <span class="desc-line">자연스럽게 읽기 속도를 올리세요.</span>
+          </div>
+        </div>
+        <div class="sort">
+          <button class="sort-chip" id="time-sort-btn" aria-label="시간 정렬">
+            <span class="sort-label">시간</span>
+            <span class="sort-arrow">↓</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-level="1" data-department="기후에너지환경부" data-date="2026-01-07T07:00:00" data-keywords="탄소, 부담금, 유럽, 기업, 생산, 공급망">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1520848315518-b991dd16a6cf?auto=format&fit=crop&w=1200&q=80" alt="">
+            <div class="badge">경제 · 3분</div>
+          </div>
+          <div class="content">
+            <div class="meta">
+              <span>2026-01-07</span>
+              <span>07:00</span>
+              <span class="department-name">기후에너지환경부</span>
+            </div>
+            <h2 class="title">유럽, 탄소 관련 새 부담금 도입</h2>
+            <p class="desc">
+              2026년부터 일정 기준을 넘는 제품에는 탄소 배출을 고려한 비용이 붙습니다. 기업들은 생산 방식과 공급망을 다시 점검해야 할 수 있어요.
+            </p>
+            <div class="footer">
+              <div class="level-tags">
+                <span class="tag">L1</span>
+              </div>
+              <button class="cta" type="button">읽기</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-level="2" data-department="과학기술정보통신부" data-date="2026-01-06T15:00:00" data-keywords="SNS, 소셜미디어, 사생활, 공유, 온라인, 기록">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1493707553966-283afac8c628?auto=format&fit=crop&w=1200&q=80" alt="">
+            <div class="badge">사회 · 4분</div>
+          </div>
+          <div class="content">
+            <div class="meta">
+              <span>2026-01-06</span>
+              <span>15:00</span>
+              <span class="department-name">과학기술정보통신부</span>
+            </div>
+            <h2 class="title">어떤 사람들은 SNS에 글을 거의 올리지 않는다</h2>
+            <p class="desc">
+              온라인에서 공유가 늘어나는 시대지만, 일부는 사생활 보호나 피로감 때문에 기록을 줄이기도 합니다. 이유는 생각보다 다양해요.
+            </p>
+            <div class="footer">
+              <div class="level-tags">
+                <span class="tag">L2</span>
+              </div>
+              <button class="cta" type="button">읽기</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-level="3" data-department="외교부" data-date="2026-01-06T07:00:00" data-keywords="미국, 베네수엘라, 외교, 국제, 긴장, 관계">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1508599589928-3e71c1e1c87c?auto=format&fit=crop&w=1200&q=80" alt="">
+            <div class="badge">국제 · 5분</div>
+          </div>
+          <div class="content">
+            <div class="meta">
+              <span>2026-01-06</span>
+              <span>07:00</span>
+              <span class="department-name">외교부</span>
+            </div>
+            <h2 class="title">미국-베네수엘라 긴장, 국제사회 우려</h2>
+            <p class="desc">
+              양국 관계가 악화되면서 경제·외교적 충돌이 커질 수 있다는 전망이 나옵니다. 주변국들도 대응 방안을 논의하고 있어요.
+            </p>
+            <div class="footer">
+              <div class="level-tags">
+                <span class="tag">L3</span>
+              </div>
+              <button class="cta" type="button">읽기</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="pagination" id="pagination" style="display: none;">
+        <button class="pagination-btn" id="prev-btn" aria-label="이전 페이지">‹</button>
+        <div class="pagination-pages" id="pagination-pages"></div>
+        <button class="pagination-btn" id="next-btn" aria-label="다음 페이지">›</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Korean News Studio</span>
+      <span class="dot">·</span>
+      <span>제작자 정인재</span>
+      <span class="dot">·</span>
+      <span>문의: rtht2021@raccoont.kr</span>
+      <span class="dot">·</span>
+      <span>출처: 대한민국 정책브리핑 (www.korea.kr)</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
